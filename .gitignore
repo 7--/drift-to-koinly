@@ -1,0 +1,28 @@
+# Drift transaction exports (personal data)
+DriftCSVs/*.csv
+
+# Generated Koinly import files (personal data)
+drift_koinly_*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
