@@ -125,11 +125,11 @@ def process_funding_payments(input_file, output_rows):
             if total_funding > 0:
                 koinly_row['Received Amount'] = str(abs(total_funding))
                 koinly_row['Received Currency'] = 'USDC'  # Funding payments are in USDC
-                koinly_row['Label'] = 'income'  # Funding received is income
+                koinly_row['Label'] = 'funding fee'  # Funding payments (positive or negative)
             else:
                 koinly_row['Sent Amount'] = str(abs(total_funding))
                 koinly_row['Sent Currency'] = 'USDC'
-                koinly_row['Label'] = 'cost'  # Funding paid is a cost
+                koinly_row['Label'] = 'funding fee'  # Funding payments (positive or negative)
             
             output_rows.append(koinly_row)
 
